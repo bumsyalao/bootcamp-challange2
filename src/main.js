@@ -7,7 +7,11 @@ class shoppingcart {
         this.total = this.quantity * this.price;
     }// end of constructor function
     printReceipt () {
+<<<<<<< HEAD
     return `Your Reciept: item: ${this.itemName} |Quantity: ${this.quantity} | Price: ${this.price} | Total: ${this.total}`;
+=======
+    return 'Your Reciept: item: ${this.itemName} |Quantity: ${this.quantity}  Price: ${this.price} | Total: ${total}';
+>>>>>>> b038c4966843f117edac11ab9e1408f8bac12115
     }//end of function toString
     print (){
         console.log( printReceipt() );
