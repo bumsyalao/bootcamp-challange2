@@ -6,14 +6,14 @@ class shoppingcart {
         this.price = price;
         this.total = this.quantity * this.price;
     }// end of constructor function
-    toString () {
+    printReceipt () {
     return 'Your Reciept: item: ${this.item} |Quantity: ${this.quantity}  Price: ${this.price} | Total: ${total}';
     }//end of function toString
     print (){
-        console.log( toString() );
+        console.log( printReceipt() );
     }//end of function print
     calcTotal (){
-        this.total = this.quantity * this.price;
+        return this.total;
     }//end of function calcTotal
     
 }//end of class shoppingcart
@@ -42,5 +42,5 @@ class customer extends shoppingcart {
     }//end of function checkout
 }//end of subcalss customer
 const bunmi = new shoppingcart('rice', 1, 200);
-bunmi.print();
-console.log(bunmi.calcTotal);
+console.log(bunmi.printReceipt());
+console.log(bunmi.calcTotal());
