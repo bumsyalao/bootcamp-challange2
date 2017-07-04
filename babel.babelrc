@@ -1,0 +1,29 @@
+
+{   //put in .babelrc file
+   presets:["es2015"], //preset contains plugins 
+   plugins: []  // to convt to ES5.
+}
+then edit your package.json file to look like this:
+{
+  "name": "shoppingcart",
+  "version": "1.0.0",
+  "description": "calculates and prints customers reciept",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",,
+    "build": "babel-node src/main.js"
+  },
+  "keywords": [
+    "class",
+    "Javascript"
+  ],
+  "author": "Bunmi Alao",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
+  }
+}

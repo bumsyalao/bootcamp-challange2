@@ -12,5 +12,11 @@
     "javascript"
   ],
   "author": "Bunmi Alao",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
+  }
 }
