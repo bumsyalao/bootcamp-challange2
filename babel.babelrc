@@ -9,9 +9,12 @@ then edit your package.json file to look like this:
   "version": "1.0.0",
   "description": "calculates and prints customers reciept",
   "main": "src/main.js",
+   "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",,
-    "build": "babel-node src/main.js"
+    "test": "mocha --compilers js:babel-register",
+    "build": "babel-node src/shoppingcart.js"
   },
   "keywords": [
     "class",

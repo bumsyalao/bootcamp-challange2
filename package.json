@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "calculates and prints customers reciept",
   "main": "src/main.js",
+   "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha test/test.js",
     "main": "node src/main.js"
   },
   "keywords": [
